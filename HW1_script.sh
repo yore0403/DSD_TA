@@ -16,13 +16,13 @@ case $1 in
     echo "ERROR: \"$2\" not found. " >> $output
     ;;
   "WRONG_FORMAT")
-    echo "ERROR: $2 has wrong format. " >> $output
+    echo "ERROR: \"$2\" has wrong format. " >> $output
     ;;
   "NO_DELAY")
-    echo "WARNING: $2 no delay. " >> $output
+    echo "WARNING: \"$2\" no delay. " >> $output
     ;;
   "REDUNDANT")
-    echo "WARNING: redundant file $2. " >> $output
+    echo "WARNING: redundant file \"$2\". " >> $output
     ;;
   #"SOMETHING_ERROR")
   # ...
@@ -41,7 +41,7 @@ set_bof(){
 file=$1
 echo "===========================================">> $file
 echo "DSD HW1 scoring system">> $file
-echo "create by b05901084">> $file
+echo "Create by b05901084">> $file
 echo "Execute time: $(date +'%Y-%m-%d %H:%M:%S')" >> $file
 echo "===========================================">> $file
 }
